@@ -1,82 +1,181 @@
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: large;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-div#container {
-  position: relative;
-  width: 100%;
-}
-
-p {
-  width: 150px;
-  text-align: center;
-  border: 1px solid black;
-  padding: 8px;
-  margin-bottom: 15px;
-  position: relative;
-}
-
-#titulo {
+.titulo {
   text-align: center;
   font-size: 4em;
-  margin-bottom: 100px;
+  margin: 40px;
 }
 
-#chicken {
-  background-color: burlywood;
-}
-
-#beef {
-  background-color: cadetblue;
-}
-
-#sushi {
-  background-color: darksalmon;
+.chicken-info,
+.beef-info,
+.sushi-info {
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+  margin-top: 50px;
 }
 
 @media (min-width: 992px) {
-  .col-lg-4 {
+  .chickenDiv,
+  .beefDiv,
+  .sushiDiv {
+    width: 30%;
     float: left;
-    width: 33.33%;
-    border: 1px solid black;
-    background-color: gray;
-    margin: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    border: 3px solid black;
+    margin-left: 40px;
+    position: relative;
   }
 
-  p {
-    left: 489px;
+  .chicken {
+    background-color: pink;
+    font-size: 20px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    padding-left: 20px;
+    margin: -13px;
+  }
+
+  .beef {
+    background-color: orange;
+    font-size: 20px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    padding-left: 20px;
+    margin: -13px;
+  }
+
+  .sushi {
+    background-color: lightblue;
+    font-size: 20px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    padding-left: 20px;
+    margin: -13px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-6 {
+  .chickenDiv,
+  .beefDiv {
+    width: 40%;
     float: left;
-    width: 50%;
-    border: 1px solid black;
-    background-color: gray;
-    margin: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    border: 3px solid black;
+    margin-left: 40px;
+    position: relative;
   }
 
-  p {
-    left: 335px;
+  .sushiDiv {
+    width: 84.1%;
+    float: left;
+    background-color: lightgray;
+    padding: 10px;
+    border: 3px solid black;
+    margin-left: 40px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .chicken {
+    background-color: pink;
+    font-size: 20px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    padding-left: 20px;
+    margin: -13px;
+  }
+
+  .beef {
+    background-color: orange;
+    font-size: 20px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    padding-left: 20px;
+    margin: -13px;
+  }
+
+  .sushi {
+    background-color: lightblue;
+    font-size: 20px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    padding-left: 20px;
+    margin: -13px;
   }
 }
 
 @media (max-width: 767px) {
-  .col-sm-12 {
+  .chickenDiv,
+  .beefDiv,
+  .sushiDiv {
+    width: 80%;
     float: left;
-    width: 100%;
-    border: 1px solid black;
-    background-color: gray;
-    margin-bottom: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    border: 3px solid black;
+    margin-left: 40px;
+    margin-top: 20px;
+    position: relative;
   }
 
-  p {
-    left: 595px;
+  .chicken {
+    background-color: pink;
+    font-size: 20px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    padding-left: 20px;
+    margin: -13px;
+  }
+
+  .beef {
+    background-color: orange;
+    font-size: 20px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    padding-left: 20px;
+    margin: -13px;
+  }
+
+  .sushi {
+    background-color: lightblue;
+    font-size: 20px;
+    display: inline;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    padding-left: 20px;
+    margin: -13px;
   }
 }
