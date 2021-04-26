@@ -1,0 +1,21 @@
+.navbar-brand {
+  text-align: left;
+}
+
+#nav-list {
+  background-color: lightblue;
+}
+
+.container {
+  height: 1000px;
+  background-color: lightgray;
+}
+
+.container > .row {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#texto {
+  font-size: 2em;
+}
