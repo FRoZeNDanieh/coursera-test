@@ -81,9 +81,7 @@ $(function () {
     showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
       allCategoriesUrl,
-      function (responseText) {
-        document.querySelector("#main-content").innerHTML = buildAndShowHomeHTML(allCategoriesUrl)
-      }, // ***** <---- TODO: STEP 1: Substitute [...] ******
+      buildAndShowHomeHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
       true
     ); // Explicitly setting the flag to get JSON from server processed into an object literal
   });
@@ -96,16 +94,15 @@ $(function () {
     $ajaxUtils.sendGetRequest(
       homeHtmlUrl,
       function (homeHtml) {
-        var chosenCategoryShortName = chooseRandomCategory(categories);
+        var chosenCategoryShortName = chooseRandomCategory(categories)
+          .short_name;
 
-        var homeHtmlToInsertIntoMainPage = homeHtml;
-        homeHtmlToInsertIntoMainPage += "<section class='row'>";
-
-        var html = insertProperty(html, "name", name);
-        html = insertProperty(html, "short_name", short_name);
-
-        homeHtmlToInsertIntoMainPage += html;
-        homeHtmlToInsertIntoMainPage += "</section>";
+        var html = homeHtml;
+        var homeHtmlToInsertIntoMainPage = insertProperty(
+          html,
+          "randomCategoryShortName",
+          "'" + chosenCategoryShortName + "'"
+        );
 
         insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
         // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
